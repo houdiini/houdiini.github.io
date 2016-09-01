@@ -1,0 +1,30 @@
+
+.button {
+  cursor: default;
+  border: 1px solid $color-border;
+  text-align: center;
+  padding: 14px;
+  border-radius: 3px;
+  transition: background .2s;
+  color: $color-icons;
+  &:hover {
+    background: rgba(0, 0, 0, 0.1);
+    color: $color-text;
+  }
+  &.green {
+    border: 1px solid #fff;
+    background: $color-green;
+    color: #fff;
+  }
+}
+
+input[type="search"] {
+  padding: 15px;
+  border: none;
+  color: $color-icons;
+  font-weight: 300;
+  font-size: 14px;
+  &:focus {
+    outline: none;
+  }
+}

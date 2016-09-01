@@ -1,0 +1,107 @@
+<ul class="content" ng-if="option.select === 0">
+  <li class="message-info" ng-repeat="message in messages" ng-if="!message.spam" ng-click="option.activeMessage = message"
+  ng-class="{active: option.activeMessage === message}">
+    <header>
+      <h3 class="title"
+        ng-class="{'tag-red': message.tag === 'red', 'tag-green': message.tag === 'green', 'tag-yellow': message.tag === 'yellow', 'tag-blue': message.tag === 'blue'}">
+        {{message.from}}
+      </h3>
+      <div class="meta">
+        <svg class="icon attachment" ng-if="message.attachment"><use xlink:href="#attachment"></use></svg>
+        <svg class="icon lock" ng-if="message.protected"><use xlink:href="#lock"></use></svg>
+        <span>{{message.time}}</span>
+      </div>
+    </header>
+    <div class="content">{{message.title}}</div>
+  </li>
+</ul>
+
+<ul class="content" ng-if="option.select === 1" >
+  <li class="message-info" ng-repeat="message in draft" ng-if="!message.spam" ng-click="option.activeMessage = message"
+  ng-class="{active: option.activeMessage === message}">
+  <header>
+    <h3 class="title"
+      ng-class="{'tag-red': message.tag === 'red', 'tag-green': message.tag === 'green', 'tag-yellow': message.tag === 'yellow', 'tag-blue': message.tag === 'blue'}">
+      {{message.from}}
+    </h3>
+    <div class="meta">
+      <svg class="icon attachment" ng-if="message.attachment"><use xlink:href="#attachment"></use></svg>
+      <svg class="icon lock" ng-if="message.protected"><use xlink:href="#lock"></use></svg>
+      <span>{{message.time}}</span>
+    </div>
+  </header>
+    <div class="content">{{message.title}}</div>
+  </li>
+</ul>
+
+<ul class="content" ng-if="option.select === 2" >
+  <li class="message-info" ng-repeat="message in messages" ng-if="message.tag" ng-click="option.activeMessage = message"
+  ng-class="{active: option.activeMessage === message}">
+  <header>
+    <h3 class="title"
+      ng-class="{'tag-red': message.tag === 'red', 'tag-green': message.tag === 'green', 'tag-yellow': message.tag === 'yellow', 'tag-blue': message.tag === 'blue'}">
+      {{message.from}}
+    </h3>
+    <div class="meta">
+      <svg class="icon attachment" ng-if="message.attachment"><use xlink:href="#attachment"></use></svg>
+      <svg class="icon lock" ng-if="message.protected"><use xlink:href="#lock"></use></svg>
+      <span>{{message.time}}</span>
+    </div>
+  </header>
+    <div class="content">{{message.title}}</div>
+  </li>
+</ul>
+
+<ul class="content" ng-if="option.select === 4" >
+  <li class="message-info" ng-repeat="message in messages" ng-if="message.spam" ng-click="option.activeMessage = message"
+  ng-class="{active: option.activeMessage === message}">
+  <header>
+    <h3 class="title"
+      ng-class="{'tag-red': message.tag === 'red', 'tag-green': message.tag === 'green', 'tag-yellow': message.tag === 'yellow', 'tag-blue': message.tag === 'blue'}">
+      {{message.from}}
+    </h3>
+    <div class="meta">
+      <svg class="icon attachment" ng-if="message.attachment"><use xlink:href="#attachment"></use></svg>
+      <svg class="icon lock" ng-if="message.protected"><use xlink:href="#lock"></use></svg>
+      <span>{{message.time}}</span>
+    </div>
+  </header>
+    <div class="content">{{message.title}}</div>
+  </li>
+</ul>
+
+<ul class="content" ng-if="option.select === 5" ng-click="option.activeMessage = message"
+ng-class="{active: option.activeMessage === message}">
+  <li class="message-info" ng-repeat="message in deleted">
+    <header>
+      <h3 class="title"
+        ng-class="{'tag-red': message.tag === 'red', 'tag-green': message.tag === 'green', 'tag-yellow': message.tag === 'yellow', 'tag-blue': message.tag === 'blue'}">
+        {{message.from}}
+      </h3>
+      <div class="meta">
+        <svg class="icon attachment" ng-if="message.attachment"><use xlink:href="#attachment"></use></svg>
+        <svg class="icon lock" ng-if="message.protected"><use xlink:href="#lock"></use></svg>
+        <span>{{message.time}}</span>
+      </div>
+    </header>
+    <div class="content">{{message.title}}</div>
+  </li>
+</ul>
+
+<ul class="content" ng-if="option.select === 5" ng-click="option.activeMessage = message"
+ng-class="{active: option.activeMessage === message}">
+  <li class="message-info" ng-repeat="message in deleted">
+    <header>
+      <h3 class="title"
+        ng-class="{'tag-red': message.tag === 'red', 'tag-green': message.tag === 'green', 'tag-yellow': message.tag === 'yellow', 'tag-blue': message.tag === 'blue'}">
+        {{message.from}}
+      </h3>
+      <div class="meta">
+        <svg class="icon attachment" ng-if="message.attachment"><use xlink:href="#attachment"></use></svg>
+        <svg class="icon lock" ng-if="message.protected"><use xlink:href="#lock"></use></svg>
+        <span>{{message.time}}</span>
+      </div>
+    </header>
+    <div class="content">{{message.title}}</div>
+  </li>
+</ul>

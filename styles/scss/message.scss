@@ -1,0 +1,144 @@
+.block-messages {
+  flex: 1.5;
+  border-right: 1px solid $color-border;
+  background: $color-akcent;
+  overflow-y: scroll;
+  & > .content {
+    list-style: none;
+    margin: 0;
+    padding: 0 20px;
+    .message-info {
+      padding: 25px 8px;
+      border-bottom: 1px solid $color-border;
+      header {
+        display: flex;
+        .title {
+          flex: 1;
+          position: relative;
+          &.tag-red, &.tag-green, &.tag-yellow, &.tag-blue {
+            &:before {
+              content: '';
+              display: block;
+              border-radius: 50%;
+              width: 5px;
+              height: 5px;
+              border: 3px solid $color-alert;
+              position: absolute;
+              left: -20px;
+            }
+            &.tag-green:before {
+              border-color: $color-green;
+            }
+            &.tag-yellow:before {
+              border-color: rgb(226, 190, 38);
+            }
+            &.tag-blue:before {
+              border-color: $color-blue;
+            }
+          }
+        }
+        .meta {
+          display: flex;
+          align-items: center;
+          font-size: 12px;
+          .icon {
+            fill: $color-icons;
+            font-size: 16px;
+            padding-right: 5px;
+          }
+          .attachment {
+            // transform: rotate3d(1,1,0, -45deg);
+          }
+        }
+      }
+      .content {
+        padding-top: 10px;
+      }
+      &.active {
+        color: #fff;
+        background: $color-blue;
+        box-shadow: 20px 0 0 $color-blue, -20px 0 0 $color-blue;
+        border-color: $color-blue;
+        header > .title { color: #fff;}
+      }
+    }
+  }
+}
+
+.block-message {
+  padding-right: 25px;
+  padding-left: 40px;
+  flex: 2;
+  &.ng-hide {
+    display: block !important;
+  }
+  header {
+    padding-top: 25px;
+    display: flex;
+    flex-flow: column nowrap;
+    font-size: 16px;
+    .from {
+      display: flex;
+      align-items: center;
+      .meta {
+        display: flex;
+        align-items: center;
+        span {display: flex; padding-left: 10px;}
+      }
+    }
+    .name {
+      flex: 1;
+      font-size: 16px;
+      margin: 5px 0;
+      font-weight: 500;
+    }
+    .to .details {
+      color: $color-blue;
+      font-weight: 300;
+      padding: 5px;
+      padding-left: 20px;
+      border: none;
+      &:hover {
+        text-decoration: underline;
+        background: transparent;
+      }
+    }
+  }
+  .content {
+    padding-bottom: 25px;
+    .title {
+      padding-bottom: 25px;
+      font-weight: 300;
+      color: $color-text-dark;
+      border-bottom: 1px solid $color-border;
+    }
+    .entry {
+      text-indent: 20px;
+      line-height: 24px;
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 1020px) {
+    .block-messages {
+      padding-left: 5px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .block-messages, .block-message{
+      width: 100%;
+      transition: all 200ms;
+      &.mobile-hide { position: absolute; }
+    }
+    .block-messages.mobile-hide {
+      transform: translate3d(-100%,0,0);
+    }
+    .block-message.mobile-hide {
+      transform: translate3d(100%,0,0);
+    }
+
+
+}

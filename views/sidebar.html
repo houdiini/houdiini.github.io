@@ -1,0 +1,58 @@
+<section class="sidebar-block">
+  <header class="title">Mailboxs</header>
+  <ul class="content">
+    <li class="option" ng-class="{active: option.select === 0}" ng-click="option.select = 0; option.showMobileMenu = true">
+      <svg class="icon inbox"><use xlink:href="#inbox"></use></svg>
+      <span>Inbox (2)</span></li>
+    <li class="option" ng-class="{active: option.select === 1}" ng-click="option.select = 1; option.showMobileMenu = true">
+      <svg class="icon document"><use xlink:href="#document"></use></svg>
+      <span>Drafts</span>
+    </li>
+    <li class="option" ng-class="{active: option.select === 2}" ng-click="option.select = 2; option.showMobileMenu = true">
+      <svg class="icon tag"><use xlink:href="#tag"></use></svg>
+      <span>Tagged (2)</span>
+    </li>
+    <li class="option" ng-class="{active: option.select === 3}" ng-click="option.select = 3; option.showMobileMenu = true">
+      <svg class="icon message"><use xlink:href="#message"></use></svg>
+      <span>Sent message</span>
+    </li>
+    <li class="option" ng-class="{active: option.select === 4}" ng-click="option.select = 4; option.showMobileMenu = true">
+      <svg class="icon radar"><use xlink:href="#radar"></use></svg>
+      <span>Spam</span>
+    </li>
+    <li class="option" ng-class="{active: option.select === 5}" ng-click="option.select = 5; option.showMobileMenu = true">
+      <svg class="icon trash"><use xlink:href="#trash"></use></svg>
+      <span>Deleted messages</span>
+    </li>
+  </ul>
+</section>
+
+<section class="sidebar-block">
+  <header class="title">Folders</header>
+  <ul class="content">
+    <li class="option" ng-class="{active: option.select === 6}" ng-click="option.select = 6; option.showMobileMenu = true">
+      <svg class="icon folder_open"><use xlink:href="#folder_open"></use></svg>
+      <span>Work</span></li>
+    <li class="option" ng-class="{active: option.select === 7}" ng-click="option.select = 7; option.showMobileMenu = true">
+      <svg class="icon folder_open"><use xlink:href="#folder_open"></use></svg>
+      <span>Personal</span>
+    </li>
+  </ul>
+</section>
+
+<section class="sidebar-block">
+  <header class="title">Options</header>
+  <ul class="content">
+    <li class="option" ng-class="{active: option.select === 8}" ng-click="option.select = 8; option.showMobileMenu = true">
+      <svg class="icon folder"><use xlink:href="#folder"></use></svg>
+      <span>Manage folders</span></li>
+    <li class="option" ng-class="{active: option.select === 9}" ng-click="option.select = 9; option.showMobileMenu = true">
+      <svg class="icon contacts"><use xlink:href="#contacts"></use></svg>
+      <span>Contacts</span>
+    </li>
+    <li class="option" ng-class="{active: option.select === 10}" ng-click="option.select = 10; option.showMobileMenu = true">
+      <svg class="icon cog"><use xlink:href="#cog"></use></svg>
+      <span>Settings</span>
+    </li>
+  </ul>
+</section>

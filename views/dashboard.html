@@ -1,0 +1,6 @@
+<div class="block-header" ui-view="header" ></div>
+<div class="main row">
+  <div class="block-sidebar" ui-view="sidebar" ng-class="{'mobile-hide': option.showMobileMenu}"></div>
+  <div class="block-messages" ui-view="messages" ng-class="{'mobile-hide': option.activeMessage.from}"></div>
+  <div class="block-message" ui-view="message" ng-show="!option.activeMessage.from" ng-class="{'mobile-hide': !option.activeMessage.from}"></div>
+</div>

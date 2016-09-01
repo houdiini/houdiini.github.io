@@ -1,0 +1,65 @@
+.block-sidebar {
+  z-index: 10;
+  min-width: 280px;
+  padding-right: 15px;
+  border-right: 1px solid $color-border;
+  overflow-y: scroll;
+  transform: translate3d(0, 0, 0);
+  .sidebar-block {
+    margin-top: 15px;
+    font-size: 14px;
+    .title {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      font-weight: 500;
+    }
+    .content {
+      list-style: none;
+      padding: 0;
+      .option {
+        cursor: default;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        border-radius: 2px;
+        transition: all .2s;
+        .icon {
+          font-size: 24px;
+          margin-right: 10px;
+          fill: $color-icons;
+          transition: all .2s;
+        }
+        &:hover, &.active {
+          color: #fff;
+          background: $color-blue;
+          box-shadow: 0 4px 0 0 $color-blue,
+            0 -4px 0 0 $color-blue;
+          .icon {
+            fill: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and ( max-width: 1020px) {
+  .dashboard { padding: 0 !important;}
+  .block-sidebar {
+    padding-left: 20px;
+    position: absolute;
+    height: calc(100% - 74px);
+    background: $color-bg;
+    transition: transform 200ms;
+    &.mobile-hide {
+      transform: translate3d(-120%, 0, 0);
+    }
+    &:not(.mobile-hide) {
+      & ~ .block-messages, & ~ .block-message {
+        -webkit-filter: blur(2px);
+      }
+    }
+  }
+
+}

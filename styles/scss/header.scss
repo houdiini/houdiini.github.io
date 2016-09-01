@@ -1,0 +1,89 @@
+.block-header {
+  width: 100%;
+  height: 74px;
+  padding: 15px 0;
+  border-bottom: 1px solid $color-border;
+  display: flex;
+  flex-flow: row nowrap;
+  box-sizing: border-box;
+  .user {
+    width: 280px;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    padding-right: 15px;
+    .photo {
+      width: auto;
+      height: 100%;
+      border-radius: 50%;
+    }
+    .info {
+      padding-left: 15px;
+      flex: 1;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      .mail {
+        font-size: 13px;
+        letter-spacing: 1px;
+      }
+    }
+  }
+  .title {
+    display: none;
+    color: #505D78;
+    padding-left: 20px;
+    text-transform: capitalize;
+  }
+  .tools {
+    display: flex;
+    align-items: center;
+    .button {
+      margin: 0 1px;
+      font-size: 16px;
+    }
+    &.left {
+      flex: 1;
+    }
+  }
+  .button.menu {
+    display: none;
+    transform: scale3d(0,0,0);
+  }
+  .back {
+    display: none;
+  }
+}
+
+@media screen and ( max-width: 1020px ) {
+  .block-header {
+    padding: 15px 25px;
+    .user { display: none !important; }
+    input[type="search"] { display: none; }
+    .title {
+      transform: translate3d(0,0,0);
+      display: block;
+      transition: transform 195ms;
+    }
+    .button.menu {
+      display: block;
+      transform: scale3d(1,1,1)
+    }
+    .button.message { display: none; }
+  }
+}
+
+@media screen and ( max-width: 640px ) {
+  .button.back {
+    display: block;
+    transition: transform 200ms;
+    &.ng-hide {
+      display: block !important;
+      transform: scale3d(0, 0, 0);
+      & ~ .title {
+        transform: translate3d(-50px, 0, 0);
+      }
+    }
+  }
+  .tools.right { display: none;}
+}
