@@ -4,8 +4,8 @@ mainCtrl.$inject = ['$scope', '$state', '$http'];
 function mainCtrl($scope, $state, $http) {
   $state.go('dashboard.components');
   $scope.user = {
-    name: 'Bart Ebbekink',
-    mail: 'mail@gmail.com'
+    name: 'Artem Ivashkevich',
+    mail: 'houdiini@gmail.com'
   }
   $scope.messages = [];
   $scope.draft = [];
