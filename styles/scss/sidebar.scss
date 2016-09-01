@@ -57,7 +57,7 @@
     }
     &:not(.mobile-hide) {
       & ~ .block-messages, & ~ .block-message {
-        -webkit-filter: blur(2px);
+
       }
     }
   }
