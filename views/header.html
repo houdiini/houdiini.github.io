@@ -2,28 +2,28 @@
   <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="" class="photo">
   <div class="info">
     <h3 class="name">{{user.name}}</h3>
-    <span class="mail">{{user.mail}}</span>
+    <a ng-href="mailto:{{user.mail}}" class="mail">{{user.mail}}</a>
   </div>
 </div>
 <div class="tools left">
   <div class="button menu" ng-click="option.showMobileMenu = !option.showMobileMenu">
     <svg class="icon menu"><use xlink:href="#menu"></use></svg>
   </div>
-  <div class="button green">
+  <a ng-href="mailto:{{user.mail}}" class="button green">
     <svg class="icon edit"><use xlink:href="#edit"></use></svg>
-  </div>
+  </a>
   <div class="button back" ng-show="option.activeMessage.from" ng-click="option.activeMessage = undefined">
     <svg class="icon arrow_back"><use xlink:href="#arrow_back"></use></svg>
   </div>
-  <div class="button message">
+  <!-- <div class="button message">
     <svg class="icon message"><use xlink:href="#message"></use></svg>
-  </div>
-  <input  type="search" placeholder="Search" />
+  </div> -->
+  <!-- <input  type="search" placeholder="Search" /> -->
   <h3 class="title">{{headerTitle(option.select)}}</h3>
 </div>
 
 <div class="tools right">
-  <div class="button">
+<!--   <div class="button">
     <svg class="icon reply"><use xlink:href="#reply"></use></svg>
   </div>
   <div class="button">
@@ -31,5 +31,5 @@
   </div>
   <div class="button">
     <svg class="icon more_horiz"><use xlink:href="#more_horiz"></use></svg>
-  </div>
+  </div> -->
 </div>

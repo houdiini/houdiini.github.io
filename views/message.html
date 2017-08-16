@@ -8,15 +8,10 @@
       <span>{{option.activeMessage.time}}</span>
     </div>
   </div>
-  <div class="to">
-    To<span class="name"> Allan Bill</span> and <span class="name"> 4 others</span>
-    <span class="button details">Show details</span>
-  </div>
 </header>
 <div class="content" ng-if="option.activeMessage.from">
   <h2 class="title">{{option.activeMessage.title}}</h2>
-  <div class="entry">
-    {{option.activeMessage.post}}
+  <div class="entry" ng-bind-html="option.activeMessage.post">
   </div>
 </div>
 <!-- <footer>

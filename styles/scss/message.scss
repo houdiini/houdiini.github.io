@@ -113,10 +113,15 @@
       border-bottom: 1px solid $color-border;
     }
     .entry {
-      text-indent: 20px;
+      /*text-indent: 20px;*/
       line-height: 24px;
     }
   }
+}
+
+a {
+  text-decoration: none;
+  color: #698bdd;
 }
 
 

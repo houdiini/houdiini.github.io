@@ -1,7 +1,7 @@
 (function(){
   'use strict';
 
-  angular.module('mail', ['ui.router', 'ngAnimate'])
+  angular.module('mail', ['ui.router', 'ngAnimate', 'ngSanitize'])
   .config(function($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise('/');
 

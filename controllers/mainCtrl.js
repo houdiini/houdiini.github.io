@@ -33,8 +33,8 @@ function mainCtrl($scope, $state, $http) {
 
   $scope.headerTitle = function(id) {
     switch (id) {
-      case 0: return 'Inbox';
-      case 1: return 'Drafts';
+      case 0: return 'Profile';
+      case 1: return 'Work experience';
       case 2: return 'Tagged';
       case 3: return 'Sent message';
       case 4: return 'Spam';

@@ -1,7 +1,7 @@
-@import "https://fonts.googleapis.com/css?family=Roboto:300,500,700";
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,500,700';
 body {
   margin: 0;
-  color: #68738A;
+  color: #68738a;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 14px;
@@ -46,24 +46,24 @@ h3 {
 
 .button {
   cursor: default;
-  border: 1px solid #E3E8EB;
+  border: 1px solid #e3e8eb;
   text-align: center;
   padding: 14px;
   border-radius: 3px;
   transition: background .2s;
-  color: #B8C0D3; }
+  color: #b8c0d3; }
   .button:hover {
     background: rgba(0, 0, 0, 0.1);
-    color: #68738A; }
+    color: #68738a; }
   .button.green {
     border: 1px solid #fff;
-    background: #2FC682;
+    background: #2fc682;
     color: #fff; }
 
 input[type="search"] {
   padding: 15px;
   border: none;
-  color: #B8C0D3;
+  color: #b8c0d3;
   font-weight: 300;
   font-size: 14px; }
   input[type="search"]:focus {
@@ -73,7 +73,7 @@ input[type="search"] {
   width: 100%;
   height: 74px;
   padding: 15px 0;
-  border-bottom: 1px solid #E3E8EB;
+  border-bottom: 1px solid #e3e8eb;
   display: flex;
   flex-flow: row nowrap;
   box-sizing: border-box; }
@@ -145,8 +145,8 @@ input[type="search"] {
     display: none; } }
 .block-messages {
   flex: 1.5;
-  border-right: 1px solid #E3E8EB;
-  background: #F8F9FB;
+  border-right: 1px solid #e3e8eb;
+  background: #f8f9fb;
   overflow-y: scroll; }
   .block-messages > .content {
     list-style: none;
@@ -154,7 +154,7 @@ input[type="search"] {
     padding: 0 20px; }
     .block-messages > .content .message-info {
       padding: 25px 8px;
-      border-bottom: 1px solid #E3E8EB; }
+      border-bottom: 1px solid #e3e8eb; }
       .block-messages > .content .message-info header {
         display: flex; }
         .block-messages > .content .message-info header .title {
@@ -166,30 +166,30 @@ input[type="search"] {
             border-radius: 50%;
             width: 5px;
             height: 5px;
-            border: 3px solid #F35655;
+            border: 3px solid #f35655;
             position: absolute;
             left: -20px; }
           .block-messages > .content .message-info header .title.tag-red.tag-green:before, .block-messages > .content .message-info header .title.tag-green.tag-green:before, .block-messages > .content .message-info header .title.tag-yellow.tag-green:before, .block-messages > .content .message-info header .title.tag-blue.tag-green:before {
-            border-color: #2FC682; }
+            border-color: #2fc682; }
           .block-messages > .content .message-info header .title.tag-red.tag-yellow:before, .block-messages > .content .message-info header .title.tag-green.tag-yellow:before, .block-messages > .content .message-info header .title.tag-yellow.tag-yellow:before, .block-messages > .content .message-info header .title.tag-blue.tag-yellow:before {
             border-color: #e2be26; }
           .block-messages > .content .message-info header .title.tag-red.tag-blue:before, .block-messages > .content .message-info header .title.tag-green.tag-blue:before, .block-messages > .content .message-info header .title.tag-yellow.tag-blue:before, .block-messages > .content .message-info header .title.tag-blue.tag-blue:before {
-            border-color: #698BDD; }
+            border-color: #698bdd; }
         .block-messages > .content .message-info header .meta {
           display: flex;
           align-items: center;
           font-size: 12px; }
           .block-messages > .content .message-info header .meta .icon {
-            fill: #B8C0D3;
+            fill: #b8c0d3;
             font-size: 16px;
             padding-right: 5px; }
       .block-messages > .content .message-info .content {
         padding-top: 10px; }
       .block-messages > .content .message-info.active {
         color: #fff;
-        background: #698BDD;
-        box-shadow: 20px 0 0 #698BDD, -20px 0 0 #698BDD;
-        border-color: #698BDD; }
+        background: #698bdd;
+        box-shadow: 20px 0 0 #698bdd, -20px 0 0 #698bdd;
+        border-color: #698bdd; }
         .block-messages > .content .message-info.active header > .title {
           color: #fff; }
 
@@ -219,7 +219,7 @@ input[type="search"] {
       margin: 5px 0;
       font-weight: 500; }
     .block-message header .to .details {
-      color: #698BDD;
+      color: #698bdd;
       font-weight: 300;
       padding: 5px;
       padding-left: 20px;
@@ -233,10 +233,14 @@ input[type="search"] {
       padding-bottom: 25px;
       font-weight: 300;
       color: #283347;
-      border-bottom: 1px solid #E3E8EB; }
+      border-bottom: 1px solid #e3e8eb; }
     .block-message .content .entry {
-      text-indent: 20px;
+      /*text-indent: 20px;*/
       line-height: 24px; }
+
+a {
+  text-decoration: none;
+  color: #698bdd; }
 
 @media screen and (max-width: 1020px) {
   .block-messages {
@@ -257,7 +261,7 @@ input[type="search"] {
   z-index: 10;
   min-width: 280px;
   padding-right: 15px;
-  border-right: 1px solid #E3E8EB;
+  border-right: 1px solid #e3e8eb;
   overflow-y: scroll;
   transform: translate3d(0, 0, 0); }
   .block-sidebar .sidebar-block {
@@ -281,12 +285,12 @@ input[type="search"] {
         .block-sidebar .sidebar-block .content .option .icon {
           font-size: 24px;
           margin-right: 10px;
-          fill: #B8C0D3;
+          fill: #b8c0d3;
           transition: all .2s; }
         .block-sidebar .sidebar-block .content .option:hover, .block-sidebar .sidebar-block .content .option.active {
           color: #fff;
-          background: #698BDD;
-          box-shadow: 0 4px 0 0 #698BDD, 0 -4px 0 0 #698BDD; }
+          background: #698bdd;
+          box-shadow: 0 4px 0 0 #698bdd, 0 -4px 0 0 #698bdd; }
           .block-sidebar .sidebar-block .content .option:hover .icon, .block-sidebar .sidebar-block .content .option.active .icon {
             fill: #fff; }
 
@@ -298,9 +302,7 @@ input[type="search"] {
     padding-left: 20px;
     position: absolute;
     height: calc(100% - 74px);
-    background: #fff;
+    background: white;
     transition: transform 200ms; }
     .block-sidebar.mobile-hide {
       transform: translate3d(-120%, 0, 0); } }
-
-/*# sourceMappingURL=style.css.map */
